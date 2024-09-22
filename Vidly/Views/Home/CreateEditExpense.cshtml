@@ -1,0 +1,27 @@
+﻿@{
+    ViewData["Title"] = "Create / Edit";
+}
+
+@model SpendSmart.Models.Expense
+
+<div class="text-center">
+    <h1 class="display-4">Create Or Edit new Expnses</h1>
+
+    
+</div>
+
+
+<form asp-action="CreateEditExpenseForm" asp-controller="Home">
+
+    
+    <input hidden class="form-control mt-4" type="number" placeholder="0" asp-for="Id" />
+
+    <label>Value</label>
+    <input class="form-control mt-4" type="number" placeholder="0" asp-for="Value" />
+
+    <label class="mt-4">Description</label>
+    <input class="form-control mt-4" type="text" placeholder="Enter Description" asp-for="Description"  />
+
+     <button class="btn btn-primary mt-4">Ok</button>
+
+</form>
